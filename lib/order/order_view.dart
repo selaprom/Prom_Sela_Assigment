@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+
+import '../bill/bill_view.dart';
 
 class OrderView extends StatelessWidget {
   OrderView({super.key});
@@ -112,7 +115,7 @@ class OrderView extends StatelessWidget {
         ),
         GestureDetector(
           onTap: () {
-            print("1");
+            Get.to(BillView());
           },
           child: Container(
             decoration: BoxDecoration(
